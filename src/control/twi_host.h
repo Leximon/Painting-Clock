@@ -8,9 +8,9 @@ namespace TWIHost {
 
     void stop();
 
-    uint8_t start(uint8_t address, uint8_t transferDirection);
+    uint8_t startWrite(uint8_t address);
 
-    uint8_t repeatedStart(uint8_t address, uint8_t transferDirection);
+    uint8_t startRead(uint8_t address);
 
     uint8_t write(uint8_t data);
 

@@ -28,7 +28,7 @@ void LEDControl::init() {
     }
 }
 
-void led() {
+void LEDControl::ledGreen() {
     LED_DAT_PORT.OUTSET = LED_DAT_PIN;
     _delay_loop_1(T0H);
     LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
@@ -152,19 +152,256 @@ void led() {
     _delay_loop_1(T0L);
 }
 
-void LEDControl::show() {
+void LEDControl::ledRed() {
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
 
-    led();
-    led();
-    led();
-    led();
-    led();
-    led();
-    led();
-    led();
-    led();
-    led();
-    led();
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T1H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T1L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+}
+
+void LEDControl::ledOff() {
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+
+    LED_DAT_PORT.OUTSET = LED_DAT_PIN;
+    _delay_loop_1(T0H);
+    LED_DAT_PORT.OUTCLR = LED_DAT_PIN;
+    _delay_loop_1(T0L);
+}
+
+
+void LEDControl::show() {
 
 //    for (uint8_t byte : leds) {
 //        for (int8_t bitIndex = 7; bitIndex >= 0; bitIndex--) {

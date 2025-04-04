@@ -6,6 +6,10 @@
 
 namespace LEDControl {
 
+    void ledGreen();
+    void ledRed();
+    void ledOff();
+
     void show();
 
     void init();
